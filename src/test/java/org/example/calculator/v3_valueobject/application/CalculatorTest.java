@@ -1,7 +1,7 @@
 // src/test/java/org/example/calculator/application/CalculatorTest.java
-package org.example.calculator.v3_vo.application;
+package org.example.calculator.v3_valueobject.application;
 
-import org.example.calculator.v3_vo.domain.vo.PositiveNumber;
+import org.example.calculator.v3_valueobject.domain.vo.PositiveNumber;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;

@@ -1,5 +1,5 @@
-package org.example.calculator.v3_vo.domain;// src/test/java/org/example/calculator/domain/PositiveNumberTest.java
-import org.example.calculator.v3_vo.domain.vo.PositiveNumber;
+package org.example.calculator.v3_valueobject.domain;// src/test/java/org/example/calculator/domain/PositiveNumberTest.java
+import org.example.calculator.v3_valueobject.domain.vo.PositiveNumber;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;

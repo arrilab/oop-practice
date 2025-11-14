@@ -1,6 +1,6 @@
-package org.example.calculator.v3_vo.domain.operator;
+package org.example.calculator.v3_valueobject.domain.operator;
 
-import org.example.calculator.v3_vo.domain.vo.PositiveNumber;
+import org.example.calculator.v3_valueobject.domain.vo.PositiveNumber;
 
 public class PositiveNumSubtractionOperator implements PositiveNumArtimeticOperator {
     @Override

@@ -1,4 +1,4 @@
-package org.example.calculator.v3_vo.domain.vo;
+package org.example.calculator.v3_valueobject.domain.vo;
 
 public class PositiveNumber {
     private final int value;

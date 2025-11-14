@@ -1,7 +1,7 @@
-package org.example.calculator.v3_vo.application;
+package org.example.calculator.v3_valueobject.application;
 
-import org.example.calculator.v3_vo.domain.vo.PositiveNumber;
-import org.example.calculator.v3_vo.domain.operator.*;
+import org.example.calculator.v3_valueobject.domain.vo.PositiveNumber;
+import org.example.calculator.v3_valueobject.domain.operator.*;
 
 import java.util.List;
 
