@@ -1,4 +1,4 @@
-package org.example.calculator.v0_if.application;
+package org.example.calculator.v0_condition.application;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;

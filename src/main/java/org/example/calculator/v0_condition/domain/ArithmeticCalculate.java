@@ -1,4 +1,4 @@
-package org.example.calculator.v0_if.domain;
+package org.example.calculator.v0_condition.domain;
 
 public class ArithmeticCalculate {
     public static int calculate(int operand1, String operator, int operand2) {

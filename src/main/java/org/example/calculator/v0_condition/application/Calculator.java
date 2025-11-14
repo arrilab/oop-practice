@@ -1,6 +1,6 @@
-package org.example.calculator.v0_if.application;
+package org.example.calculator.v0_condition.application;
 
-import org.example.calculator.v0_if.domain.ArithmeticCalculate;
+import org.example.calculator.v0_condition.domain.ArithmeticCalculate;
 
 public class Calculator {
 
