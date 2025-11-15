@@ -1,4 +1,4 @@
-package org.example.s2_tomcat.http.request;
+package org.example.s2_webserver.http.request;
 
 import java.util.List;
 import java.util.Objects;
@@ -41,5 +41,4 @@ public class QueryParams {
     public int hashCode() {
         return Objects.hashCode(queryParams);
     }
-
 }

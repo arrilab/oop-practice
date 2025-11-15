@@ -1,6 +1,6 @@
-package org.example.s2_tomcat;
+package org.example.s2_webserver;
 
-import org.example.s2_tomcat.server.HttpServer;
+import org.example.s2_webserver.server.HttpServer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -1,9 +1,9 @@
-package org.example.s2_tomcat.web;
+package org.example.s2_webserver.web;
 
 import org.example.s1_oop.s0_calculator.v3_valueobject.application.Calculator;
 import org.example.s1_oop.s0_calculator.v3_valueobject.domain.vo.PositiveNumber;
-import org.example.s2_tomcat.http.request.HttpRequest;
-import org.example.s2_tomcat.http.response.HttpResponse;
+import org.example.s2_webserver.http.request.HttpRequest;
+import org.example.s2_webserver.http.response.HttpResponse;
 
 public class CalculateController implements Controller {
 

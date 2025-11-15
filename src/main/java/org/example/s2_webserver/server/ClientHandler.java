@@ -1,8 +1,8 @@
-package org.example.s2_tomcat.server;
+package org.example.s2_webserver.server;
 
-import org.example.s2_tomcat.http.request.HttpRequest;
-import org.example.s2_tomcat.http.response.HttpResponse;
-import org.example.s2_tomcat.web.Controller;
+import org.example.s2_webserver.http.request.HttpRequest;
+import org.example.s2_webserver.http.response.HttpResponse;
+import org.example.s2_webserver.web.Controller;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -29,33 +29,41 @@ public class ClientHandler implements Runnable {
 
     @Override
     public void run() {
+        log.info("[{}] new ClientHandler started", Thread.currentThread().getName());
+
         try (socket;
              var in = new BufferedReader(new InputStreamReader(socket.getInputStream(), UTF_8));
              var out = new DataOutputStream(socket.getOutputStream())) {
 
             // 1. 요청 파싱
-            HttpRequest request = new HttpRequest(in);
-            HttpResponse response = new HttpResponse(out);
+            var req = new HttpRequest(in);
+            var res = new HttpResponse(out);
 
             // 2. GET만 처리
-            if (!request.isGetRequest()) {
-                log.warn("Unsupported method: {}", request.getRequestLine().getMethod());
+            if (!req.isGetRequest()) {
+                log.warn("Unsupported method: {}", req.getRequestLine().getMethod());
                 return;
             }
 
             // 3. 라우팅
-            Controller controller = controllerMap.get(request.getPath());
+            Controller controller = controllerMap.get(req.getPath());
             if (controller == null) {
-                log.warn("No controller found for path {}", request.getPath());
+                log.warn("No controller found for path {}", req.getPath());
                 // TODO: 404 응답 처리 가능
                 return;
             }
 
             // 4. 컨트롤러 호출
-            controller.handle(request, response);
+            controller.handle(req, res);
 
-        } catch (IOException e) {
-            log.error("Client handling error: ", e);
+        } catch (Exception e) {
+            log.error("[{}] Error while handling client", Thread.currentThread().getName(), e);
+        } finally {
+            try {
+                socket.close();
+            } catch (IOException e) {
+                log.warn("Error while closing client socket", e);
+            }
         }
     }
 }

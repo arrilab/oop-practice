@@ -1,4 +1,4 @@
-package org.example.s2_tomcat.http.request;
+package org.example.s2_webserver.http.request;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

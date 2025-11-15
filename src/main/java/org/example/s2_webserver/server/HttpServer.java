@@ -1,7 +1,7 @@
-package org.example.s2_tomcat.server;
+package org.example.s2_webserver.server;
 
-import org.example.s2_tomcat.web.CalculateController;
-import org.example.s2_tomcat.web.Controller;
+import org.example.s2_webserver.web.CalculateController;
+import org.example.s2_webserver.web.Controller;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -29,8 +29,6 @@ public class HttpServer {
             while (true) {
                 Socket clientSocket = serverSocket.accept();
                 log.info("Client connected: {}", clientSocket);
-
-                // ClientHandler 생성 후 스레드로 실행
                 new Thread(new ClientHandler(clientSocket, controllerMap)).start();
             }
         }

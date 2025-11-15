@@ -1,4 +1,4 @@
-package org.example.s2_tomcat.http.request;
+package org.example.s2_webserver.http.request;
 
 import java.io.BufferedReader;
 import java.io.IOException;

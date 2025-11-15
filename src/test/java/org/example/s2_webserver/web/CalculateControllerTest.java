@@ -1,8 +1,8 @@
-package org.example.s2_tomcat.web;
+package org.example.s2_webserver.web;
 
-import org.example.s2_tomcat.http.request.HttpRequest;
-import org.example.s2_tomcat.http.request.QueryParams;
-import org.example.s2_tomcat.http.response.HttpResponse;
+import org.example.s2_webserver.http.request.HttpRequest;
+import org.example.s2_webserver.http.request.QueryParams;
+import org.example.s2_webserver.http.response.HttpResponse;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

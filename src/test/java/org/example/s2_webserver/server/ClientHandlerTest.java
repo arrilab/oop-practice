@@ -1,6 +1,6 @@
-package org.example.s2_tomcat.server;
+package org.example.s2_webserver.server;
 
-import org.example.s2_tomcat.web.Controller;
+import org.example.s2_webserver.web.Controller;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

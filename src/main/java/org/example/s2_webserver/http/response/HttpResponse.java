@@ -1,4 +1,4 @@
-package org.example.s2_tomcat.http.response;
+package org.example.s2_webserver.http.response;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
