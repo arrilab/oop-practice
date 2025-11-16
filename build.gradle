@@ -21,6 +21,8 @@ dependencies {
     // Password 정책
     implementation 'org.passay:passay:1.6.1'
 
+    // Reflection
+    implementation 'org.reflections:reflections:0.10.2'
 
     // JDBC, DBCP
     implementation 'com.zaxxer:HikariCP:5.0.1'

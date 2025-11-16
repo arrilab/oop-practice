@@ -17,6 +17,7 @@ public class UserDao {
                     pstmt.setString(3, user.getName());
                     pstmt.setString(4, user.getEmail());
                 }
+
         );
     }
 
